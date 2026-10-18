@@ -1,0 +1,9 @@
+ultralytics>=8.4
+opencv-python>=4.8
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.8
+pillow>=10.0
+jupyter>=1.0
+ipykernel>=6.0
+PyYAML>=6.0
