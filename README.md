@@ -1,4 +1,4 @@
-# Fingerprint Small Object Detection
+# Small Object Fingerprint Detection on Printed Documents Using YOLOv8 and Synthetic Dataset Augmentation
 
 ## Overview
 This repository contains the code, notebooks, and documentation used to investigate small fingerprint detection in printed documents using YOLOv8.
