@@ -40,7 +40,7 @@ pip install -r requirements.txt
 ### Windows
 ```powershell
 python -m venv .venv
-.venv\Scriptsctivate
+.\venv\Scripts\Activate.ps1
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
