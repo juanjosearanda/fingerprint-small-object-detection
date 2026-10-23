@@ -16,14 +16,44 @@ Detect small printed fingerprints embedded in larger document images captured un
 ## Repository Structure
 ```text
 fingerprint-small-object-detection/
-├── paper/
-├── notebooks/
-├── src/
-├── configs/
-├── docs/
-├── examples/
+│
+├── README.md
+│
+├── LICENSE
+│
 ├── requirements.txt
-└── README.md
+│
+├── paper/
+│   ├── paper.tex
+│   ├── references.bib
+│   └── figures/
+│
+├── notebooks/
+│   ├── 01_generate_bboxes.ipynb
+│   ├── 02_generate_synthetic_dataset.ipynb
+│   ├── 03_train_yolov8.ipynb
+│   ├── 04_validation.ipynb
+│   └── 05_camera_evaluation.ipynb
+│
+├── src/
+│   ├── dataset_generator_v2.py
+│   ├── bbox_generator.py
+│   ├── training.py
+│   └── camera_app.py
+│
+├── configs/
+│   ├── retrain.yaml
+│   └── small_fingerprints_v1.yaml
+│
+├── examples/
+│   ├── synthetic_samples/
+│   ├── labels_examples/
+│   └── results_examples/
+│
+├── docs/
+│   └── methodology.md
+│
+└── .gitignore
 ```
 
 ## Environment Setup
