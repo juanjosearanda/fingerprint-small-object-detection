@@ -1,0 +1,9 @@
+Fingerprint datasets such as SOCOFing were originally designed for biometric recognition and classification tasks, where fingerprint images typically occupy most of the image area. However, practical document-analysis scenarios often require detecting small printed fingerprints embedded within larger documents captured under real-world conditions, including varying illumination, low contrast, noise, and partial occlusions.
+
+This work presents a complete methodology for adapting a standard fingerprint dataset to a small-object detection problem. Starting from the SOCOFing dataset, we automatically generated object-detection annotations using contour-based fingerprint localization. The resulting annotations were used to train a YOLOv8 detector and subsequently extend the dataset through a synthetic generation pipeline designed to emulate real document acquisition conditions.
+
+The proposed synthetic dataset introduces multiple fingerprint scales, random spatial placement, simulated occlusions, and image degradations. A lightweight YOLOv8n model was trained on the generated dataset and achieved a mean Average Precision (mAP50-95) of 0.995 during validation.
+
+Real-world experiments revealed a significant domain shift between synthetic and captured document images. Through systematic testing, image contrast was identified as a major factor affecting detection performance. Histogram equalization and Contrast Limited Adaptive Histogram Equalization (CLAHE) substantially improved fingerprint detectability, demonstrating that acquisition and preprocessing stages can have a greater impact than additional model training.
+
+The proposed workflow provides a reproducible methodology for transforming recognition-oriented biometric datasets into small-object detection datasets and highlights the critical role of image acquisition quality in practical deployment scenarios.
